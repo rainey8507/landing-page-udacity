@@ -13,6 +13,7 @@ let navBar = document.querySelector(".nav");
     navItem3.innerHTML = "About";
     navItem4.innerHTML = "Testimonies";
     navItem5.innerHTML = "Contact";
+
     /* Style a navigation list item */
     navItem1.style.color = "#9cb1b1";
     navItem2.style.color = "#cfcf8c";
@@ -38,15 +39,21 @@ let navBar = document.querySelector(".nav");
     navItem4.style.fontSize = "20px";
     navItem5.style.fontSize = "20px";
 
+
+    /*Create a tag */
+    let aTag = document.createElement('a');
+    aTag.setAttribute('class', 'menu-link');
+
+    aTag.addEventListener("click", () => {
+        document.scrollIntoView({behavior: "smooth"})
+    });
     menu.appendChild(navItem1);
     menu.appendChild(navItem2);
     menu.appendChild(navItem3);
     menu.appendChild(navItem4);
     menu.appendChild(navItem5);
 
-/* Create a link item */
-    let aLink = document.createElement('a');
-    aLink.style.cursor = "pointer";
+
 /* Make navigation responsive */
 menu.style.maxHeight = "0px";
 function togglemenu() {
