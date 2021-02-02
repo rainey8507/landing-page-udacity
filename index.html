@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>The Ramen Shop</title>
+  <!-- Logo -->
+  <link rel="icon" href="logo.png">
+  <!-- Load Google Fonts -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Antic+Slab&family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+  
+  <!--Font awesome CDN link -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
+
+  <!-- External CSS -->
+  <link href="css/styles.css" rel="stylesheet">
+</head>
+<body>
+  
+  <div class="container">
+    <div class="nav">
+      <a href="#"><img class="logo" src="images/logo.png" alt="logo site"></a>
+      <nav>
+        <ul id="menu">
+          <li><a class="active" href="index.html">home</a></li>
+          <li><a href="#service">service</a></li>
+          <li><a href="#about">about</a></li>
+          <li><a href="#testimonies">testimonies</a></li>
+          <li><a href="#contact">contact</a></li>
+        </ul>
+        <img src="images/menu-bar.png"  class="menu-icon" onclick="togglemenu()" alt="">
+      </nav>
+    </div>
+
+    <div class="banner">
+      <div class="left-banner">
+        <h2>Yummy! Yummy!</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+        <a href="#service" class="btn-more">More Info</a>
+      </div>
+      <div class="right-banner">
+        <img src="images/chef.jpg" class="chef" alt="chef of a restaurant">
+      </div>
+    </div>
+  </div>
+  
+  <main>
+    <!-- Service -->
+    <section id="service">
+      <div class="intro-text">
+        <h2>Best Seller</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+      </div>
+      <div class="service-content">
+        <div>
+          <img class="service-img" src="images/service-img1.jpg" alt="ramen bowl">
+          <p class="service-text">Chicken Ramen</p>
+        </div>
+        <div>
+          <img class="service-img" src="images/service-img2.jpg" alt="ramen bowl">
+          <p class="service-text">Pork Ramen</p>
+        </div>
+        <div>
+          <img class="service-img" src="images/service-img3.jpg" alt="ramen bowl">
+          <p class="service-text">Seafood Ramen</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="about">
+      <div class="intro-text intro-about">
+        <h2>About</h2>
+      </div>
+      <div class="about-content">
+        <img src="images/about-img.jpg" alt="image of a restaurant">
+        <p class="about-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste cum nobis corrupti aliquid atque, nemo minima sed voluptates ut deleniti aut ducimus perspiciatis a qui delectus porro dolorum ipsa fuga nulla soluta? Explicabo ex nulla totam vitae quae, velit natus ducimus necessitatibus error nihil, sit dicta. Officia nihil deleniti quisquam earum, asperiores iusto nisi minima sapiente libero, aspernatur dicta sunt est hic esse! Cumque nobis quisquam beatae vitae. Consequuntur expedita quo tempora distinctio maxime repellendus suscipit, aperiam fuga quam quae vel enim veritatis, libero dolores dignissimos eligendi accusantium at quia, quisquam quis. Cumque delectus necessitatibus, commodi soluta dolor maiores nobis.</p>
+      </div>
+    </section>
+
+    <!-- testimonies -->
+    <section id="testimonies">
+      <div class="intro-text">
+        <h2>What our customers say!</h2>
+      </div>
+      <div class="testimonies-content">
+        <div class="card">
+          <i class="fas fa-quote-left"></i>
+          <p class="quote-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit saepe sed blanditiis explicabo, reprehenderit illum minus, repellat laudantium magni illo labore tempore ea ratione ducimus accusantium nostrum.</p>
+          <p class="name">Jane Doe</p>
+          
+        </div>
+
+        <div class="card">
+          <i class="fas fa-quote-left"></i>
+          <p class="quote-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit saepe sed blanditiis explicabo, reprehenderit illum minus, repellat laudantium magni illo labore tempore ea ratione ducimus accusantium nostrum.</p>
+          <p class="name">John Doe</p>
+          
+        </div>
+
+        <div class="card">
+          <i class="fas fa-quote-left"></i>
+          <p class="quote-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit saepe sed blanditiis explicabo, reprehenderit illum minus, repellat laudantium magni illo labore tempore ea ratione ducimus accusantium nostrum.</p>
+          <p class="name">Jane Doe</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Contact -->
+  <section id="contact">
+    <div class="intro-text">
+      <h2>Contact</h2>
+    </div>
+    <div class="contact-wrapper">
+      <div class="contact-content">
+        <p class="address"><i class="fas fa-map-marker-alt"></i> 1234 Avocaodo Street</p>
+        <p class="phone"><i class="fas fa-phone"></i> 123-456-7890</p>
+      </div>
+      <div class="map-content">
+        <iframe class="gmap" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d226774.90164129727!2d-81.28192865810877!3d27.36453785330621!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88dc5d4168595d8d%3A0x53b77f92b147fd51!2sCangs%20Restaurant!5e0!3m2!1sen!2sus!4v1612141357366!5m2!1sen!2sus" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; Ramen Rose ~ All Right Reversed!</p>
+  </footer>
+  <script src="js/app.js"></script>
+</body>
+</html>
