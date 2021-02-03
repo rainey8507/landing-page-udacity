@@ -74,6 +74,20 @@ ul {
     line-height: 7px;
 }
 
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: var(--main-bg);
+    margin-right: 20px;
+    font-size: 20px;
+}
+
+.active {
+    color: var(--light-color);
+}
 /* ul li {
     list-style-type: none;
     display: inline-block;
