@@ -34,8 +34,10 @@ section {
     background: var(--main-bg);
    
 }
-.active {
+li.active {
     border-bottom: 2px solid #fff;
+    background-color: blue;
+    color: red;
 }
 
 /* Navigation */

@@ -1,18 +1,20 @@
 // Define Global Variables 
 let navBar = document.querySelector(".nav");
 const navList = document.querySelector("#menu");
-const NavigationSection = document.querySelectorAll('section'); 
-document.querySelectorAll('section');
+const navigationSection = document.querySelectorAll('section'); 
+const navLi = document.querySelectorAll('nav ul li');
+//document.querySelectorAll('section');
+
 
 
 // Build Nav
 function buildNav() {
     const fragmentNav = document.createDocumentFragment();
-    NavigationSection.forEach((NavigationSection) => {
+    navigationSection.forEach((navigationSection) => {
         let liTag = document.createElement('li');
         let aLink = document.createElement('a');
         liTag.classList.add("nav-link");
-        aLink.innerHTML = NavigationSection.getAttribute("data-navbar");
+        aLink.innerHTML = navigationSection.getAttribute("data-nav");
 
         liTag.appendChild(aLink);
         navList.appendChild(liTag);
@@ -22,14 +24,26 @@ function buildNav() {
 }
 
 // Active Class 
-function activeState() {
-    let index = NavigationSection.length;
-    while(--index && window.scrollY + 50 < NavigationSection[index].offsetTop) {
-        links.forEach((link) =>link.classList.remove('active'));
-        links[index].classList.add('active');
-    }
+window.addEventListener('scroll', () => {
+    let current = "";
+    navigationSection.forEach(section => {
+        const sectionTop = section.offsetTop;
+        const sectionHeight = section.clientHeight;
+        if(pageYOffset > sectionTop) {
+            current = section.getAttribute("id");
+        }
+    });
 
-}
+    navLi.forEach(li => {
+        li.classList.remove('active');
+        if(li.classList.contains(current)) {
+            li.classList.add('active');
+        }
+    })
+});
+
+
+
 
 /* Make navigation responsive */
 navList.style.maxHeight = "0px";
@@ -51,8 +65,5 @@ navBar.scrollTo({
 
 // Build a navigation menu
 buildNav();
-const links = document.querySelectorAll('.ul li a');
 
-// Run active state 
-activeState();
-window.addEventListener('scroll', activeState);
+
