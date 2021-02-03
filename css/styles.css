@@ -30,6 +30,14 @@ a {
     color: var(--text-color);
     cursor: pointer;
 }
+section {
+    background: var(--main-bg);
+   
+}
+.active {
+    border-bottom: 2px solid #fff;
+}
+
 /* Navigation */
 
 header {
@@ -52,6 +60,7 @@ header {
     padding: 0 10px;
     position: fixed; 
     top: 0;
+    right: 0;
 }
 
 
@@ -85,9 +94,7 @@ a {
     font-size: 20px;
 }
 
-.active {
-    color: var(--light-color);
-}
+
 /* ul li {
     list-style-type: none;
     display: inline-block;

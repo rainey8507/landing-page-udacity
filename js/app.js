@@ -2,7 +2,7 @@
 let navBar = document.querySelector(".nav");
 const navList = document.querySelector("#menu");
 const NavigationSection = document.querySelectorAll('section'); 
-const links = document.querySelectorAll('.ul li a');
+document.querySelectorAll('section');
 
 
 // Build Nav
@@ -31,10 +31,6 @@ function activeState() {
 
 }
 
-// Run active state 
-activeState();
-window.addEventListener('scroll', activeState);
-
 /* Make navigation responsive */
 navList.style.maxHeight = "0px";
 function togglemenu() {
@@ -55,4 +51,8 @@ navBar.scrollTo({
 
 // Build a navigation menu
 buildNav();
+const links = document.querySelectorAll('.ul li a');
 
+// Run active state 
+activeState();
+window.addEventListener('scroll', activeState);
