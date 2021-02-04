@@ -1,9 +1,9 @@
-THIS IS THE SECOND PORJECT OF UDACITY
+# THIS IS THE SECOND PORJECT OF UDACITY
 
-Project: Landing Page.
+## Project: Landing Page.
 
-Description: 
+###### **Description:** 
 
-Navigation is built dynanically  with smooth scrolling.
+* Navigation is built dynanically  with smooth scrolling.
 
-When clicking on the navigation menu, the link scroll to the selected section. 
+* When clicking on the navigation menu, the link scroll to the selected section. 

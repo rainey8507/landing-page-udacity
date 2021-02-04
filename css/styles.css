@@ -37,14 +37,14 @@ section {
 }
 
 /* Style active class */
-.active {
+/* .active {
     background-color: blue;
     color: red;
-}
+} */
 
 section.your-active-class {
-    background: #000;
-    color: red;
+    border: 1px solid var(--main-color);
+    background: var(--light-color);
 }
 
 /* Navigation */
