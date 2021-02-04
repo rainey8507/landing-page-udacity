@@ -29,7 +29,7 @@ window.addEventListener('scroll', () => {
     sections.forEach(section => {
         const sectionTop = section.offsetTop;
         //const sectionHeight = section.clientHeight;
-        if(pageYOffset + 180 > sectionTop) {
+        if(pageYOffset + 180 > sectionTop & pageYOffset - 180 < sectionTop) {
             current = section.getAttribute("id");
             section.classList.add("your-active-class");
         } else {
