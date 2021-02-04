@@ -29,12 +29,13 @@ a {
     text-decoration: none;
     color: var(--text-color);
     cursor: pointer;
+    text-transform: capitalize;
 }
 section {
     background: var(--main-bg);
    
 }
-li.active {
+nav li.active {
     border-bottom: 2px solid #fff;
     background-color: blue;
     color: red;
@@ -97,37 +98,6 @@ a {
 }
 
 
-/* ul li {
-    list-style-type: none;
-    display: inline-block;
-    margin-right: 30px;
-}
-
-ul li a {
-    text-decoration: none;
-    color: var(--main-bg);
-    text-transform: capitalize;
-    font-size: 20px;
-    font-family: 'PT Sans', sans-serif;
-    font-weight: 400;
-    cursor: pointer;
-}
-
-ul li a:hover,
-ul li a.active {
-    color: var(--light-color);
-    border-bottom: 1px solid var(--light-color);
-    cursor: pointer;
-}
-
-ul li a.active {
-    border: none;
-    font-weight: normal;
-}
-
-ul li a.active:hover {
-    border-bottom: 1px solid var(--light-color);
-} */
 
 /* Banner */
 .banner {
