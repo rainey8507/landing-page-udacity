@@ -298,6 +298,9 @@ footer p {
     font-size: 16px;
     padding: 10px 0;
 }
+
+/* Responsive */
+
 @media only screen and (max-width: 939px) {
     html, body {
         overflow-x: hidden;
@@ -357,7 +360,8 @@ footer p {
     .banner {
         display: flex;
         flex-direction: column-reverse;
-        height: 100vh;
+        height: calc(100vh + 100px);
+        padding-top: 100px;
     }
 
     .left-banner {
@@ -369,7 +373,7 @@ footer p {
 
     .left-banner h2 {
         font-size: 32px;
-        margin-bottom: 16px;
+        margin-bottom: 10px;
     }
 
     .left-banner p {
@@ -489,7 +493,8 @@ footer p {
 
 @media only screen and (max-width: 480px) {
     header.banner{
-        min-height: calc(100vh + 35px);
+        min-height: calc(100vh + 55px);
+        padding-top: 30px;
     }
 
     .right-banner img {
@@ -498,5 +503,9 @@ footer p {
 
     .about-content img {
         width: 90%;
+    }
+
+    .left-banner {
+        margin-bottom: 20px;
     }
 }
