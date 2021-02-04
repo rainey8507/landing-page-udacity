@@ -1,7 +1,7 @@
 // Define Global Variables 
 let navBar = document.querySelector(".nav");
 const navList = document.querySelector("#menu");
-const navigationSection = document.querySelectorAll('section'); 
+const sections = document.querySelectorAll('section'); 
 const navLi = document.querySelectorAll('nav ul li');
 //document.querySelectorAll('section');
 
@@ -10,11 +10,11 @@ const navLi = document.querySelectorAll('nav ul li');
 // Build Nav
 function buildNav() {
     const fragmentNav = document.createDocumentFragment();
-    navigationSection.forEach((navigationSection) => {
+    sections.forEach((section) => {
         let liTag = document.createElement('li');
         let aLink = document.createElement('a');
         liTag.classList.add("nav-link");
-        aLink.innerHTML = navigationSection.getAttribute("data-nav");
+        aLink.innerHTML = section.getAttribute("data-nav");
 
         liTag.appendChild(aLink);
         navList.appendChild(liTag);
@@ -26,11 +26,14 @@ function buildNav() {
 // Active Class 
 window.addEventListener('scroll', () => {
     let current = "";
-    navigationSection.forEach(section => {
+    sections.forEach(section => {
         const sectionTop = section.offsetTop;
         const sectionHeight = section.clientHeight;
-        if(pageYOffset > sectionTop) {
+        if(pageYOffset + 100 > sectionTop) {
             current = section.getAttribute("id");
+            sections.classList.add("your-active-class");
+        } else {
+            sections.classList.remove("your-active-class");
         }
     });
 

@@ -31,13 +31,19 @@ a {
     cursor: pointer;
     text-transform: capitalize;
 }
+
 section {
     background: var(--main-bg);
-   
 }
-nav li.active {
-    border-bottom: 2px solid #fff;
+
+/* Style active class */
+.active {
     background-color: blue;
+    color: red;
+}
+
+section.your-active-class {
+    background: #000;
     color: red;
 }
 
