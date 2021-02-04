@@ -29,22 +29,13 @@ window.addEventListener('scroll', () => {
     sections.forEach(section => {
         const sectionTop = section.offsetTop;
         const sectionHeight = section.clientHeight;
-        if(pageYOffset + 50 > sectionTop) {
+        if(pageYOffset + 180 > sectionTop) {
             current = section.getAttribute("id");
             section.classList.add("your-active-class");
         } else {
             section.classList.remove("your-active-class");
         }
     });
-    
-    /*navLi.forEach(li => {
-        li.classList.remove('active');
-        if(li.classList.contains(current)) {
-            li.classList.add('active');
-        } else {
-            li.classList.remove('active');
-        }
-    });*/
 });
 
 
